@@ -1,3 +1,4 @@
+{{- if not .Values.secret.existingSecretName }}
 apiVersion: batch/v1
 kind: Job
 metadata:
@@ -12,7 +13,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: migrate-identity
-          image: bitnami/kubectl:latest
+          image: "{{ .Values.migrateJobImage.registry }}/{{ .Values.migrateJobImage.repository }}:{{ .Values.migrateJobImage.tag | default "latest" }}"
           command: ["/bin/bash", "/scripts/migrate.sh"]
           volumeMounts:
             - name: identity-pvc
@@ -27,3 +28,4 @@ spec:
           configMap:
             name: {{ include "ziti-edge-tunnel.fullname" . }}-identity-migrate
             defaultMode: 0755
+{{- end }}
