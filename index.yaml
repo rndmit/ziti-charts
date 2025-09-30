@@ -77,6 +77,16 @@ entries:
   ziti-controller:
   - apiVersion: v2
     appVersion: 1.6.8
+    created: "2025-09-30T14:51:57.977603144Z"
+    description: Host an OpenZiti controller in Kubernetes
+    digest: e383773753b9c3e9ddff60a126128be8cb932accbf3dd8b2555b02403d78770b
+    name: ziti-controller
+    type: application
+    urls:
+    - https://github.com/rndmit/ziti-charts/releases/download/ziti-controller-2.0.6/ziti-controller-2.0.6.tgz
+    version: 2.0.6
+  - apiVersion: v2
+    appVersion: 1.6.8
     created: "2025-09-30T14:48:46.019932481Z"
     description: Host an OpenZiti controller in Kubernetes
     digest: f7a4b5564c7927386ab35bbb0de05285c782744c5722874eb313ade71553b7e8
@@ -96,6 +106,25 @@ entries:
     - https://github.com/rndmit/ziti-charts/releases/download/ziti-controller-2.0.3/ziti-controller-2.0.3.tgz
     version: 2.0.3
   ziti-edge-tunnel:
+  - apiVersion: v2
+    appVersion: 1.5.12
+    created: "2025-09-30T14:51:58.120869306Z"
+    description: Dial OpenZiti services with a tunneler daemonset
+    digest: 98e3de50faddb2ab08cc50605b219f7afb21095677100fab3b2e66129a188f4d
+    home: https://openziti.io
+    icon: https://openziti.io/img/ziti-logo-dark.svg
+    keywords:
+    - openziti
+    - coredns
+    - node-local-dns
+    kubeVersion: '>= 1.20.0-0'
+    name: ziti-edge-tunnel
+    sources:
+    - https://github.com/openziti/ziti-tunnel-sdk-c
+    type: application
+    urls:
+    - https://github.com/rndmit/ziti-charts/releases/download/ziti-edge-tunnel-1.2.1/ziti-edge-tunnel-1.2.1.tgz
+    version: 1.2.1
   - apiVersion: v2
     appVersion: 1.5.12
     created: "2025-09-30T14:41:22.715432856Z"
@@ -159,4 +188,4 @@ entries:
     urls:
     - https://github.com/rndmit/ziti-charts/releases/download/zrok-1.0.1/zrok-1.0.1.tgz
     version: 1.0.1
-generated: "2025-09-30T14:48:46.179999323Z"
+generated: "2025-09-30T14:51:58.120888632Z"
