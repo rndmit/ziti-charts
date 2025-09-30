@@ -76,6 +76,16 @@ entries:
     version: 0.1.1
   ziti-controller:
   - apiVersion: v2
+    appVersion: 1.6.8
+    created: "2025-09-30T14:48:46.019932481Z"
+    description: Host an OpenZiti controller in Kubernetes
+    digest: f7a4b5564c7927386ab35bbb0de05285c782744c5722874eb313ade71553b7e8
+    name: ziti-controller
+    type: application
+    urls:
+    - https://github.com/rndmit/ziti-charts/releases/download/ziti-controller-2.0.5/ziti-controller-2.0.5.tgz
+    version: 2.0.5
+  - apiVersion: v2
     appVersion: 1.6.5
     created: "2025-09-30T14:41:22.55523105Z"
     description: Host an OpenZiti controller in Kubernetes
@@ -119,6 +129,16 @@ entries:
     version: 1.1.0
   ziti-router:
   - apiVersion: v2
+    appVersion: 1.6.8
+    created: "2025-09-30T14:48:46.179985667Z"
+    description: Host an OpenZiti router in Kubernetes
+    digest: 217d8204d858c7ea06da5e76fa990f4e36ed0d890921153c0a31035277669c46
+    name: ziti-router
+    type: application
+    urls:
+    - https://github.com/rndmit/ziti-charts/releases/download/ziti-router-1.5.1/ziti-router-1.5.1.tgz
+    version: 1.5.1
+  - apiVersion: v2
     appVersion: 1.6.7
     created: "2025-09-30T14:41:23.134182338Z"
     description: Host an OpenZiti router in Kubernetes
@@ -139,4 +159,4 @@ entries:
     urls:
     - https://github.com/rndmit/ziti-charts/releases/download/zrok-1.0.1/zrok-1.0.1.tgz
     version: 1.0.1
-generated: "2025-09-30T14:41:23.257759871Z"
+generated: "2025-09-30T14:48:46.179999323Z"
